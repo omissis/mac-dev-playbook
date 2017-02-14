@@ -8,7 +8,7 @@ configure_osx: yes
 
 dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles # todo fix path
 dotfiles_files:
   - .bash_profile
   - .gitignore
@@ -17,57 +17,90 @@ dotfiles_files:
   - .vimrc
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
   - autoconf
+  - bash
   - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
+  - ctop
+  - docker
+  - docker-compose
+  - docker-machine
+  - docker-machine-driver-xhyve
   - git
   - go
-  - gpg
-  - hub
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
+  - homebrew/cask-fonts/font-menlo-for-powerline
+  - htop
   - nmap
   - node
-  - nvm
-  - php
   - ssh-copy-id
-  - cowsay
   - readline
   - openssl
+  - packer
   - pv
+  - readline
+  - ssh-copy-id
+  - terraform
+  - tig
+  - tldr
+  - watch
   - wget
-  - wrk
 
 homebrew_taps:
-  - homebrew/core
   - homebrew/cask
+  - homebrew/core
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - chromedriver
-  - docker
-  - dropbox
+  - 1password
+  - alfred
+  - appcode
+  - battle-net
+  - bettertouchtool
+  - caskroom/cask
+  - caskroom/versions/firefox-developer-edition
+  - cleanmymac
+  - dash
+  - datagrip
   - firefox
+  - gitify
   - google-chrome
-  - handbrake
-  - licecap
-  - limechat
-  - macvim
+  - intellij
+  - iterm2
+  - java
+  - kaleidoscope
+  - mysqlworkbench
+  - phpstorm
+  - postman
+  - pycharm
+  - reggy
   - sequel-pro
-  - skitch
+  - skype
   - slack
+  - spotify
+  - steam
   - sublime-text
+  - telegram
   - transmit
+  - tunnelblick
   - vagrant
+  # - virtualbox
+  # - virtualbox-extension-pack
+  - visual-studio-code
+  - vlc
+  - whatsapp
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+mas_installed_apps: [
+  # - keynote
+  # - kindle
+  # - mindnode pro 1
+  # - numbers
+  # - onenote
+  # - pixelmator
+  # - pocket
+  # - the unarchiver
+  # - wunderlist
+  # - xcode
+]
 mas_email: ""
 mas_password: ""
 
@@ -95,3 +128,5 @@ pip_packages: []
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
+
+# TODO: Add oh-my-zsh and its config (zshrc, powerline fonts)
