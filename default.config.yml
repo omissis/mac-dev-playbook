@@ -20,6 +20,8 @@ homebrew_installed_packages:
   - autoconf
   - bash
   - bash-completion
+  - bat
+  - coreutils
   - ctop
   - docker
   - docker-compose
@@ -29,6 +31,7 @@ homebrew_installed_packages:
   - go
   - homebrew/cask-fonts/font-menlo-for-powerline
   - htop
+  - mkcert
   - nmap
   - node
   - ssh-copy-id
@@ -83,8 +86,8 @@ homebrew_cask_apps:
   - transmit
   - tunnelblick
   - vagrant
-  # - virtualbox
-  # - virtualbox-extension-pack
+  - virtualbox
+  - virtualbox-extension-pack
   - visual-studio-code
   - vlc
   - whatsapp
