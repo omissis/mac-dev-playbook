@@ -6,106 +6,147 @@ configure_sudoers: yes
 configure_terminal: yes
 configure_osx: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/omissis/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles # todo fix path
+dotfiles_repo_local_destination: ~/Projects/dotfiles
 dotfiles_files:
-  - .bash_profile
+  - .aliases
   - .gitignore
   - .inputrc
   - .osx
   - .vimrc
+  - .zshrc
 
 homebrew_installed_packages:
   - autoconf
+  - awscli
   - bash
   - bash-completion
   - bat
+  - composer
   - coreutils
   - ctop
   - docker
   - docker-compose
   - docker-machine
   - docker-machine-driver-xhyve
+  - fswatch
+  - fzf
   - git
+  - git-quick-stats
   - go
-  - homebrew/cask-fonts/font-menlo-for-powerline
+  - guumaster/tap/hostctl
+  - helm
+  - helm@2
   - htop
+  - hub
+  - jq
+  - kubectl
+  - kubectx
+  - mas
   - mkcert
   - nmap
   - node
-  - ssh-copy-id
-  - readline
+  - nss
   - openssl
   - packer
+  - php
   - pv
   - readline
   - ssh-copy-id
   - terraform
   - tig
   - tldr
+  - tmux
+  - tmuxinator
   - tree
+  - trendyol/trendyol-tap/docker-shell
   - watch
   - wget
+  - yq
+  - zsh
+  - zsh-autosuggestions
+  - zsh-completions
+  - zsh-history-substring-search
+  - zsh-syntax-highlighting
+
+  - https://raw.githubusercontent.com/mavimo/git-helper-gh/master/git-helper-gh.rb
 
 homebrew_taps:
   - homebrew/cask
+  - homebrew/cask-versions
   - homebrew/core
+  - trendyol/trendyol-tap
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password
+  - alacritty
   - alfred
   - appcode
   - battle-net
-  - bettertouchtool
-  - caskroom/cask
-  - caskroom/versions/firefox-developer-edition
+  - boostnote
   - cleanmymac
   - dash
   - datagrip
-  - firefox
+  - discord
   - gitify
+  - gitup
+  - goland
   - google-chrome
-  - intellij
+  - hex-fiend
+  - homebrew/cask-fonts/font-menlo-for-powerline
+  - homebrew/cask-fonts/font-terminus
+  - homebrew/cask-fonts/font-terminus-nerd-font
+  - homebrew/cask-fonts/font-terminus-nerd-font-mono
+  - homebrew/cask-versions/firefox-developer-edition
   - iterm2
   - java
   - kaleidoscope
+  - keybase
+  - kindle
+  - miro-formerly-realtimeboard
+  - mongodb-compass-community
   - mysqlworkbench
+  - openinterminal
   - phpstorm
   - postman
-  - pycharm
-  - reggy
+  - rocket
   - sequel-pro
+  - sketch
   - skype
   - slack
   - spotify
   - steam
   - sublime-text
   - telegram
+  - the-unarchiver
+  - toggl
   - transmit
   - tunnelblick
+  - tuple
   - vagrant
-  - virtualbox
-  - virtualbox-extension-pack
   - visual-studio-code
   - vlc
   - whatsapp
   - wireshark
+  - zeplin
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: [
-  # - keynote
-  # - kindle
-  # - mindnode pro 1
-  # - numbers
-  # - onenote
-  # - pixelmator
-  # - pocket
-  # - the unarchiver
-  # - wunderlist
-  # - xcode
-]
+mas_installed_apps:
+  - { id: 1477385213, name: "Save to Pocket" }
+  - { id: 1274495053, name: "Microsoft To Do" }
+  - { id: 1458969831, name: "JSON Peep for Safari" }
+  - { id: 1176895641, name: "Spark - Email App by Readdle" }
+  - { id: 441258766, name: "Magnet" }
+  - { id: 409183694, name: "Keynote" }
+  - { id: 409203825, name: "Numbers" }
+  - { id: 409201541, name: "Pages" }
+  - { id: 568494494, name: "Pocket" }
+  - { id: 407963104, name: "Pixelmator" }
+  - { id: 497799835, name: "Xcode" }
+  - { id: 1445910651, name: "Dynamo" }
+
 mas_email: ""
 mas_password: ""
 
@@ -122,7 +163,9 @@ gem_packages: []
   # - name: bundler
   #   state: present # present/absent/latest, default: present
   #   version: "~> 1.15.1" # default: N/A
-npm_packages: []
+npm_packages:
+  - name: git-open
+  - name: semantic-git-commit-cli
   # - name: webpack
   #   state: present # present/absent/latest, default: present
   #   version: "^2.6" # default: N/A
@@ -134,4 +177,13 @@ pip_packages: []
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
 
-# TODO: Add oh-my-zsh and its config (zshrc, powerline fonts)
+# Manual Installations
+# - Backblaze
+# - Invision: https://www.invisionapp.com/studio
+# - MindNode Pro 1 from the App Store
+# - Virtualbox + Extension Pack https://www.virtualbox.org/wiki/Downloads
+# - TMUX Config files: https://github.com/gpakosz/.tmux
+# - Oh my zsh https://github.com/ohmyzsh/ohmyzsh
+# - Hostctl: https://github.com/guumaster/hostctl/releases
+# - Git Extra Commands: https://github.com/unixorn/git-extra-commands
+# - Git Quick stats: https://github.com/arzzen/git-quick-stats
