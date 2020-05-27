@@ -55,6 +55,7 @@ homebrew_installed_packages:
   - readline
   - ssh-copy-id
   - terraform
+  - tflint
   - tig
   - tldr
   - tmux
@@ -87,6 +88,7 @@ homebrew_cask_apps:
   - battle-net
   - boostnote
   - cleanmymac
+  - cocoapods
   - dash
   - datagrip
   - discord
@@ -100,6 +102,7 @@ homebrew_cask_apps:
   - homebrew/cask-fonts/font-terminus-nerd-font
   - homebrew/cask-fonts/font-terminus-nerd-font-mono
   - homebrew/cask-versions/firefox-developer-edition
+  - ios-deploy
   - iterm2
   - java
   - kaleidoscope
@@ -123,10 +126,11 @@ homebrew_cask_apps:
   - the-unarchiver
   - toggl
   - transmit
-  - tunnelblick
+  # - tunnelblick
   - tuple
   - vagrant
   - visual-studio-code
+  - viscosity
   - vlc
   - whatsapp
   - wireshark
@@ -164,7 +168,9 @@ gem_packages: []
   #   state: present # present/absent/latest, default: present
   #   version: "~> 1.15.1" # default: N/A
 npm_packages:
+  - name: cordova
   - name: git-open
+  - name: kubelive
   - name: semantic-git-commit-cli
   # - name: webpack
   #   state: present # present/absent/latest, default: present
@@ -187,3 +193,4 @@ post_provision_tasks: []
 # - Hostctl: https://github.com/guumaster/hostctl/releases
 # - Git Extra Commands: https://github.com/unixorn/git-extra-commands
 # - Git Quick stats: https://github.com/arzzen/git-quick-stats
+# - Alfred Viscosity Workflow: https://github.com/deanishe/alfred-vpn-manager/releases/download/v3.2.0/VPN-Manager-3.2.alfredworkflow
