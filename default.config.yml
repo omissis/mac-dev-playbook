@@ -26,16 +26,11 @@ homebrew_installed_packages:
   - composer
   - coreutils
   - ctop
-  - docker
-  - docker-compose
-  - docker-machine
-  - docker-machine-driver-xhyve
   - fswatch
   - fzf
   - git
   - git-quick-stats
   - go
-  - guumaster/tap/hostctl
   - helm
   - helm@2
   - htop
@@ -51,6 +46,7 @@ homebrew_installed_packages:
   - openssl
   - packer
   - php
+  - pyenv
   - pv
   - readline
   - ssh-copy-id
@@ -84,17 +80,16 @@ homebrew_cask_apps:
   - 1password
   - alacritty
   - alfred
-  - appcode
   - battle-net
+  - bettertouchtool
   - boostnote
   - cleanmymac
   - cocoapods
   - dash
-  - datagrip
   - discord
+  - docker-edge
   - gitify
   - gitup
-  - goland
   - google-chrome
   - hex-fiend
   - homebrew/cask-fonts/font-menlo-for-powerline
@@ -111,11 +106,8 @@ homebrew_cask_apps:
   - miro-formerly-realtimeboard
   - mongodb-compass-community
   - mysqlworkbench
-  - openinterminal
-  - phpstorm
   - postman
   - rocket
-  - sequel-pro
   - sketch
   - skype
   - slack
@@ -126,11 +118,10 @@ homebrew_cask_apps:
   - the-unarchiver
   - toggl
   - transmit
-  # - tunnelblick
+  - tunnelblick
   - tuple
   - vagrant
   - visual-studio-code
-  - viscosity
   - vlc
   - whatsapp
   - wireshark
@@ -150,6 +141,7 @@ mas_installed_apps:
   - { id: 407963104, name: "Pixelmator" }
   - { id: 497799835, name: "Xcode" }
   - { id: 1445910651, name: "Dynamo" }
+  - { id: 1518036000, name: "Sequel Ace" }
 
 mas_email: ""
 mas_password: ""
@@ -190,7 +182,5 @@ post_provision_tasks: []
 # - Virtualbox + Extension Pack https://www.virtualbox.org/wiki/Downloads
 # - TMUX Config files: https://github.com/gpakosz/.tmux
 # - Oh my zsh https://github.com/ohmyzsh/ohmyzsh
-# - Hostctl: https://github.com/guumaster/hostctl/releases
 # - Git Extra Commands: https://github.com/unixorn/git-extra-commands
 # - Git Quick stats: https://github.com/arzzen/git-quick-stats
-# - Alfred Viscosity Workflow: https://github.com/deanishe/alfred-vpn-manager/releases/download/v3.2.0/VPN-Manager-3.2.alfredworkflow
