@@ -26,6 +26,7 @@ homebrew_installed_packages:
   - composer
   - coreutils
   - ctop
+  - duti
   - fswatch
   - fzf
   - git
@@ -82,6 +83,7 @@ homebrew_cask_apps:
   - alfred
   - battle-net
   - bettertouchtool
+  - boop
   - boostnote
   - cleanmymac
   - cocoapods
