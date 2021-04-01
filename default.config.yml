@@ -23,15 +23,18 @@ homebrew_installed_packages:
   - bash
   - bash-completion
   - bat
+  - chart-testing
   - composer
   - coreutils
   - ctop
+  - doctl
   - duti
   - fswatch
   - fzf
   - git
   - git-quick-stats
   - go
+  - hashicorp/tap/boundary
   - helm
   - helm@2
   - htop
@@ -50,6 +53,7 @@ homebrew_installed_packages:
   - pyenv
   - pv
   - readline
+  - shellcheck
   - ssh-copy-id
   - terraform
   - tflint
@@ -186,3 +190,4 @@ post_provision_tasks: []
 # - Oh my zsh https://github.com/ohmyzsh/ohmyzsh
 # - Git Extra Commands: https://github.com/unixorn/git-extra-commands
 # - Git Quick stats: https://github.com/arzzen/git-quick-stats
+# - Apple fonts: https://developer.apple.com/fonts/
